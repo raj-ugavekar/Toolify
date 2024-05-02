@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#444;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+
+ body{
+   background: #eee;
+ }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    padding-top: 20px;
+    background: #e4e3e3;
+}
+
+ .nav-title{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+ }
+
+ .toolbox{
+   align-self: center;
+   width: 25px;
+   height:25px;
+   margin-bottom: 1.9rem;
+   margin-right: 10px;
+}
+
+.title{
+  font-size: 5rem;
+  margin: 2rem;
+  margin-bottom: none;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+.container{
+  max-width: 1200px;
+  margin:0 auto;
+  padding:2rem 2rem;
+  padding-bottom: 0.3rem;
+  width: 800px;
+}
+
+h5{
+  margin-top:15px;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+}
+
+.btnimage , .download{
+  background-color: #2e9e5c;
+  color: #fff;
+  border: none;
+  width: 99%;
+  border-radius: 3px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btnimage,.download:hover{
+  background-color: #035a27;
+}
+
+.btnimage,.download:active{
+  background-color: #0f9948;
+}
+
+.btnimage:hover{
+  background-color: #035a27;
+}
+
+.btnimage:active{
+  background-color: #0f9948;
+}
+
+.text-area{
+  height: 120px;
+  width: 681px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  resize: none;
+  padding-left: 0.5em;
+  margin-bottom:20px;
+}
+
+.textinfo img{
+  padding:14px 10px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.textinfo{
+  display: flex;
+  align-items: center;
+  background: #ccc;
+  width:90%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  resize: none;
+  margin-top:20px;
+  padding-left: 0.5em;
+}
+
+.input-text{
+  margin-top:15px;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+  padding-right: 25em;
+}
+
+.imagePreview{
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 90%;
+}
+
+.imagePreview img{
+  max-width: 50%;
+  max-height: 50%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Base64 Converter</title>
+    <script src="base.js" defer></script>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="/images/toolify.svg" alt="" class="toolbox">
+        <a href="/index.html"><div class="nav-title">Toolify</div></a>
+    </div>
+    <div class="title">Image to Base64</div>
+        <div class="container">
+        <div class="left-container">
+            <label for="images" class="drop-container" id="dropcontainer">
+            <input type="file" id="fileInput" accept="image/*" required>
+            </label>
+            <div class="imagePreview">
+                <img src="" alt="Image Preview" class="image" >
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="textinfo">
+                <h5 class="base64-text">Base64 String</h5>
+                <img src="/images/copy-regular.svg" id="baseCopy" alt="" >
+            </div>
+            <textarea class="text-area base64" cols="50" rows="30" placeholder="Your Base64 string will appear here..."></textarea>
+            <div class="textinfo">
+                <h5 class="html-text">HTML code</h5>
+                <img src="/images/copy-regular.svg" id="htmlCopy" alt="" >
+            </div>
+            <textarea class="text-area html" cols="30" rows="10" placeholder="Your html code will appear here..."></textarea>
+            <div class="textinfo">
+                <h5 class="css-text">CSS Background Source</h5>
+                <img src="/images/copy-regular.svg" id="cssCopy" alt="" >
+            </div>
+            <textarea class="text-area css" cols="30" rows="10" placeholder="Your css background code will appear here..."></textarea>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

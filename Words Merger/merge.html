@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Words Merger</title>
+    <link rel="stylesheet" href="merge.css" />
+    <script src="merge.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="/images/toolify.svg" alt="" class="toolbox" />
+      <a href="/index.html"><div class="nav-title">Toolify</div></a>
+    </div>
+    <div class="title">Words Merger</div>
+    <div class="container">
+      <div class="input-container">
+        <div class="textinput1">
+          <p for="text-area1">Enter some words:</p>
+          <textarea
+            id="text-area1"
+            class="text-area"
+            placeholder="Enter some words here"
+          ></textarea>
+        </div>
+
+        <div class="textinput2">
+          <p for="text-area2">Enter some words:</p>
+          <textarea
+            id="text-area2"
+            class="text-area"
+            placeholder="Enter some words here"
+          ></textarea>
+        </div>
+
+        <div class="textinput3">
+          <p for="text-area3">Enter some words:</p>
+          <textarea
+            id="text-area3"
+            class="text-area"
+            placeholder="Enter some words here"
+          ></textarea>
+        </div>
+      </div>
+
+      <h5 id="extra">--Extra Options</h5>
+
+      <div class="options">
+        <div class="key">
+          <label for="separator">Separator: </label>
+          <input type="button" value="Nothing" class="nothing btn" />
+          <input type="button" value="Space" class="space btn" />
+          <input type="button" value="Minus" class="minus btn" />
+          <input type="button" value="Plus" class="plus btn" />
+          <input type="button" value="Custom :" class="custom_separator btn" />
+          <input type="text" id="custom_sep" placeholder="eg. +" />
+
+          <div class="wrapper">
+            <label for="wrap_in">Wrap in: </label>
+            <input type="button" value="Nothing" class="nothing_wrap btn" />
+            <input type="button" value='" "' class="double_wrap btn" />
+            <input type="button" value="[ ]" class="sqr_bracket_wrap btn" />
+            <input type="button" value="{ }" class="curly_bracket_wrap btn" />
+            <input type="button" value="Custom :" class="custom_wrapper btn" />
+            <input type="text" id="custom_wrap" placeholder="eg. {}" />
+          </div>
+        </div>
+      </div>
+      <div class="mergeBtn">
+        <center>
+          <input
+            type="button"
+            id="mergebutton"
+            class="merge"
+            value="Merge!"
+            onclick="display()"
+          />
+          <input
+            type="button"
+            id="clearbutton"
+            class="clear"
+            value="Clear"
+            onclick="clear()"
+          />
+        </center>
+      </div>
+
+      <div class="display">
+        <center>
+          <div class="combinations">
+            Total Combinations possible : <span id="combo"></span>
+          </div>
+          <textarea
+            id="output"
+            class="text-area output-textarea"
+            placeholder="Output will appear here..."
+            readonly
+          ></textarea>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

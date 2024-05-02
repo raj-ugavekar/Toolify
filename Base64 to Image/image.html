@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base64 to Image Converter</title>
+    <script src="image.js" defer></script>
+    <link rel="stylesheet" href="image.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="/images/toolify.svg" alt="" class="toolbox" />
+      <a href="index.html"><div class="nav-title">Toolify</div></a>
+    </div>
+    <div class="title">Base64 to Image</div>
+    <div class="container">
+      <div class="textinfo">
+        <h5 class="input-text">Enter Base64 string:</h5>
+        <img src="/images/copy-regular.svg" id="inputCopy" alt="" />
+        <img src="/images/xmark-solid.svg" id="inputClear" alt="" />
+      </div>
+      <textarea
+        class="text-area inputData"
+        placeholder="Enter your Base64 string..."
+      ></textarea>
+      <button type="button" class="btnimage">Generate Image</button>
+      <button class="download">Download Image</button>
+      <div class="imagePreview">
+        <img src="" alt="Image Preview" class="image" />
+      </div>
+    </div>
+  </body>
+</html>

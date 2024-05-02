@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Beautifier</title>
+    <script src="json.js" defer></script>
+    <link rel="stylesheet" href="json.css" />
+  </head>
+  <body>
+    <!--    
+  <div class="alert success-alert">
+    <h3>Copy to  clipboard Successfully!</h3>
+    <a class="close">&times;</a>
+  </div>  -->
+    <div class="navbar">
+      <img src="/images/toolify.svg" class="toolbox" />
+      <a href="/index.html"><div class="nav-title">Toolify</div></a>
+    </div>
+    <div class="title">JSON Beautifier</div>
+    <div class="container">
+      <div class="left-container">
+        <div class="textinfo">
+          <h5 for="inputData" class="inputData">Enter JSON here:</h5>
+          <img src="/images/copy-regular.svg" id="inputCopy" alt="" />
+          <img src="/images/xmark-solid.svg" id="inputClear" alt="" />
+        </div>
+        <textarea
+          class="text-area input"
+          placeholder="Enter your JSON here..."
+        ></textarea>
+      </div>
+      <div class="middle-container">
+        <div class="controls">
+          <button
+            type="button"
+            class="con-btn btn-tree"
+            onclick="generateTree()"
+          >
+            Tree Viewer
+          </button>
+          <button type="button" class="con-btn btn-beautify">Beautify</button>
+          <select class="btn-space">
+            <option value="1">1 tab space</option>
+            <option value="2">2 tab space</option>
+            <option value="3">3 tab space</option>
+            <option value="4">4 tab space</option>
+            <option value="6">6 tab space</option>
+            <option value="8">8 tab space</option>
+            <option value="10">10 tab space</option>
+          </select>
+          <button type="button" class="con-btn btn-minify con-btn-btn">
+            Minify
+          </button>
+          <button type="button" class="con-btn btn-validate con-btn-btn">
+            Validate
+          </button>
+          <button type="button" class="con-btn btn-toXML con-btn-btn">
+            To XML
+          </button>
+          <button type="button" class="con-btn btn-URL con-btn-btn">
+            From URL
+          </button>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="textinfo">
+          <h5 class="outputData">Output :</h5>
+          <img src="/images/copy-regular.svg" id="outputCopy" alt="" />
+        </div>
+        <textarea
+          readonly
+          class="text-area output"
+          placeholder="Your JSON will appear here..."
+        ></textarea>
+        <div id="tree-viewer"></div>
+      </div>
+    </div>
+  </body>
+</html>

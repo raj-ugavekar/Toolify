@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#444;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+
+ body{
+   background: #eee;
+ }
+
+ .navbar{
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  padding-top: 20px;
+  background: #e4e3e3;
+}
+
+.nav-title{
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.toolbox{
+ align-self: center;
+ width: 25px;
+ height:25px;
+ margin-bottom: 1.9rem;
+ margin-right: 10px;
+}
+
+.title{
+    font-size: 5rem;
+    margin: 2rem;
+    margin-bottom: none;
+    letter-spacing: 1rem;
+    text-align: center;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 2rem 2rem 2rem;
+ }
+
+.input-container{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top:none;
+    margin: 40px;
+}
+
+p{
+    padding-left: 0.5em;
+    line-height: 1.5;
+    font-size: 1.5rem;
+ }
+
+.text-area{
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    resize: none;
+    padding-left: 0.5em;
+}
+
+.text-area:hover {
+    background: #f6f6f6; 
+}
+
+.key{
+    margin-left: 90px;
+}
+
+.btn{
+    background-color: #bad4f0;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #9dc1e7;
+}
+
+.btn:active{
+    background-color: #5995d4;
+}
+
+label{
+    line-height: 1.5;
+    font-size: 1.5rem;
+
+}
+
+#custom_sep, #custom_wrap{
+    width: 80px;
+    height: 30px;
+}
+
+#mergebutton{
+    background-color: #2e9e5c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#mergebutton:hover{
+    background-color: #035a27;
+}
+
+#mergebutton:active{
+    background-color: #0f9948;
+}
+
+.combinations{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.output-textarea{
+    height: 200px;
+    width: 500px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    resize: none;
+    padding-left: 0.5em;
+}
+
+#extra{
+    color: #5995d4;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#extra:hover{
+    color: #114781;
+}
+
+#extra:active{
+    color: rgb(0, 33, 66);
+}
+
+.options{
+    display: none;
+}
+
+#clearbutton{
+    background-color: #a6c9ee;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#clearbutton:hover{
+    background-color: #9dc1e7;
+}
+
+#clearbutton:active{
+    background-color: #5995d4;
+}
